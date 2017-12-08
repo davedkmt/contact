@@ -249,6 +249,9 @@ nav #nav-links li.active:after,header nav #nav-links li:hover:after{
     left:0;
     opacity:1;
 }
+.contacts {
+  text-decoration: none;
+}
 nav #nav-links li a{
     text-decoration: none;
     color:#fff;
