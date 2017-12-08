@@ -3,7 +3,7 @@ if( isset($_POST['n']) && isset($_POST['e']) && isset($_POST['m']) ){
 	$n = $_POST['n']; // HINT: use preg_replace() to filter the data
 	$e = $_POST['e'];
 	$m = nl2br($_POST['m']);
-	$to = "remonfawzi0@yahoo.com";	
+	$to = "dtadesse87@yahoo.com";
 	$from = $e;
 	$subject = 'Message from your website';
 	$message = '<b>Name:</b> '.$n.' <br><b>Email:</b> '.$e.' <p>'.$m.'</p>';
@@ -11,7 +11,7 @@ if( isset($_POST['n']) && isset($_POST['e']) && isset($_POST['m']) ){
 	$headers .= "MIME-Version: 1.0\n";
 	$headers .= "Content-type: text/html; charset=iso-8859-1\n";
 	if( mail($to, $subject, $message, $headers) ){
-		echo "success";
+		echo "Thank you for getting in touch - I will get back to you soon!";
 	} else {
 		echo "sending failed, please try again.";
 	}
